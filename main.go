@@ -379,7 +379,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 	// 弾を管理する関数（副作用として弾のY軸オフセットを取得）
 	g.manageBullets()
 
-	for i := 0; i <= bulletCount; i++ {
+	for i := 0; i < bulletCount; i++ {
 		// 対象の弾を発射したフラグがtrueの時に
 		if bullet[i].useFlag {
 			// 弾を発射
